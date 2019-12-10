@@ -19,7 +19,7 @@ class HomeVC: UIViewController {
     @IBAction func handleTapPost(_ sender: Any) {
         let parameter = ["switchs": "1", "page":"123456"]
         
-        guard let url = URL(string: "http://157.230.249.251:7777/api/wifiinfo") else { return }
+        guard let url = URL(string: "http://192.168.4.1/wifiinfo") else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
